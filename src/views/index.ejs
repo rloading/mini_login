@@ -1,0 +1,20 @@
+<%- include('partials/head') %>
+
+<body>
+  <main>
+    <section id="container">
+      <% if (!locals.isLogged) {%>
+
+      <a href="/login"><h1>Bem vindo ao login</h1></a>
+
+      <% } else { %>
+
+      <h1>Você já está logado <i class="far fa-thumbs-up"></i>, <%= locals.user.name %>!</h1>
+      <br>
+      <p><a href="/logout"> Sair</a></p>
+
+      <% } %>
+
+    </section>
+  </main>
+</body>

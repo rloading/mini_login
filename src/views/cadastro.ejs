@@ -1,0 +1,25 @@
+<%- include('partials/head') %>
+
+<body>
+    <main>
+        <section id="container">
+            <form action="cadastro" method="post">
+                <label for="name">Nome</label> <br />
+                <input type="text" id="name" name="name" required/><br />
+                <label for="lastname">Sobrenome</label><br />
+                <input type="text" id="lastname" name="lastname" required/><br />
+                <label for="email">Email</label><br />
+                <input type="email" id="email" name="email" placeholder="manolo@email.com" required/>
+                <label for="password">Cadastre sua senha</label><br />
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required/><br />
+                <label for="state">Informe seu Estado</label>
+                <input list="state" name="state" id="state" required>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+                <br>
+            <p><a href="/">Voltar</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
